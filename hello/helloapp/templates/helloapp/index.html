@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello App</title>
+</head>
+<body>
+    <h1>Welcome to Hello App</h1>
+    <form action="/greet" method="post">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="Enter your name">
+        <button type="submit">Greet Me</button>
+    </form>
+</body>
+</html>
